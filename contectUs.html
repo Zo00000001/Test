@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezo Swimming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 class="logo">MEZO Swimming</h2>
+    
+    <div class="navbar">
+        <a href="index.html">Home</a>        
+        <a href="couse.html">Couse</a> 
+        <a href="contectUs.html">Contect Us</a>
+    </div>
+    <h3>Contect Us</h3>
+    <div class="center">
+        <a class="link" href="http://t.me/nget_soriya">Telegram</a>
+        <a class="link" href="http://www.facebook.com">Facebook</a>
+        <a class="link" href="http://www.youtube.com">Youtube</a>
+    </div>
+    
+    
+
+    <div class="center padding">
+       <form action="booking">
+        <label for="name">Name: </label><br>
+        <input type="text" id="name"> <br>
+
+        <label for="email">Email: </label><br>
+        <input type="email" id="email"> <br>
+
+        <label for="phone">Phone: </label><br>
+        <input type="phone" id="phone"> <br>
+
+        <label for="course">Course: </label><br>
+        <input type="text" id="course"> <br>
+        <br>
+
+        <button id="submit" type="button">Booking</button>
+    </form> 
+    </div>
+<footer><p>Mezo Swimming &copy; 2020</p></footer>
+</body>
+<script src="js/srcipt.js"></script>
+<script src="js/jquery.js"> </script>
+
+<script>
+$(document).ready(function() {
+    // jQuery code
+    
+
+    $(`#submit`).click(function(){
+        let name = $(`#name`).val();
+        let email = $(`#email`).val();
+        let phone = $(`#phone`).val();
+        let course = $(`#course`).val();
+        clickCount = 0;
+        clickCount++;
+        console.log(`Hello`, clickCount +` times`);
+        
+        
+
+
+        console.log(`Name: ${name}`);
+        console.log(`Email: ${email}`);
+        console.log(`Phone: ${phone}`); 
+        console.log(`Course: ${course}`);
+        clickCount += 1;
+        console.log(`Hello`, clickCount +` times`);
+        let Number = 1;
+    });
+
+});
+</script>
+
+</html>
